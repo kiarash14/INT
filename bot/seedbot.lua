@@ -260,26 +260,24 @@ function create_config( )
     "leave_ban",
     "admin",
     },
-    sudo_users = {83150569},--Sudo users
+    sudo_users = {100096055},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Mirror TG V2
-	
-	You can't add bot to group(add bot to group jast sudo)
+    about_text = [[TeleBumper v4.5 
+    
+ http://s7.picofile.com/file/8234722668/Bumper  
+    
+    
+Sudo:  
+@Kiarash_gh1 [Manager]  
+    
+    
+Id Bot  
+@TeleBumper  
 
-	 1group:3$ and 2group:5$
-	 
-	 special thanks to:
-	 seedteam
-	 mega satan
-	 yagop
-	 
-	 coming for fixed all bugs and Version3:-)
-	 
-	 sudo: @pouya_x_boy
-	 
-	 MIRROR TG IS YOUR GROUP MANAGER
-     channel: @Mirrortg_ch
+
+Our channels
+@TeleBumperch [Persian]
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -430,7 +428,7 @@ qr <text>
 ارسال کیو آر کد متن مورد نظر
 sticker<reply photo>
 تبدیل عکس به استیکر
-addpouya
+addsudo
 ادد شدن سودو در گروه
 share
 دریافت شماره ربات
@@ -441,8 +439,8 @@ text <text>
 
 تمامی دستور ها با علامت های"/","!","."و بدون علامت کار میکند
 مدیرهای گروه و صاحب های آن در صورت اسپم اخراج نمیشوند
-Sudo: @pouya_x_boy
-channel: @mirrortg_ch
+Sudo: @Kiarash_gh14
+channel: @TeleBumperCh
 ]]
   }
   serialize_to_file(config, './data/config.lua')

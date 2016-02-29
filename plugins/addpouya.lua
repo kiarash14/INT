@@ -5,20 +5,20 @@ local function callback(extra, success, result)
 end
     function run(msg, matches)
         if not is_momod or not is_owner then
-    return "Only Owners can added POUYA X BOY!!!"
+    return "Only Owners can added Sudo !!!"
 end
     local user = 'user#id'
     local chat = 'chat#id'..msg.to.id
     chat_add_user(chat, user, callback, false)
-    return "@pouya_x_boy Added To: "..string.gsub(msg.to.print_name, "_", " ")..'['..msg.to.id..']'
+    return "@kiarash_gh14 Added To: "..string.gsub(msg.to.print_name, "_", " ")..'['..msg.to.id..']'
 end
 return {
     usage = {
-      "Addadmin: Add Sudo In Group."
+      "Addsudo: Add Sudo In Group."
       },
     patterns = {
-        "^[!/.]([Aa][Dd][Dd][Pp][Oo][Uu][Yy][Aa])$"
-		"^([Aa][Dd][Dd][Pp][Oo][Uu][Yy][Aa])$"
+        "^[!/.]([Aa][Dd][Dd][Ss][Oo][Dd][Uu])$"
+		"^([Aa][Dd][Dd][Ss][Oo][Dd][Uu])$"
 		
         },
     run = run

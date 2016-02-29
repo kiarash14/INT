@@ -91,10 +91,10 @@ local function bot_stats()
   return text
 end
 local function run(msg, matches)
-  if matches[1]:lower() == 'mirror' then -- Put everything you like :)
+  if matches[1]:lower() == 'bumper' then -- Put everything you like :)
     local about = _config.about_text
     local name = user_print_name(msg.from)
-    savelog(msg.to.id, name.." ["..msg.from.id.."] used /mirror ")
+    savelog(msg.to.id, name.." ["..msg.from.id.."] used /bumper")
     return about
   end 
   if matches[1]:lower() == "statslist" then
@@ -120,7 +120,7 @@ local function run(msg, matches)
         return
       end
     end
-    if matches[2] == "mirror" then -- Put everything you like :)
+    if matches[2] == "bumper" then -- Put everything you like :)
       if not is_admin(msg) then
         return "For admins only !"
       else
@@ -138,16 +138,11 @@ local function run(msg, matches)
 end
 return {
   patterns = {
-    "^([Ss]tats)$",
-    "^([Ss]tatslist)$",
-    "^([Ss]tats) (group) (%d+)",
-    "^([Ss]tats) (mirror)",-- Put everything you like :)
-		"^([Mm]irror)"-- Put everything you like :)
-		"^[!/.]([Ss]tats)$",
-    "^[!/.]([Ss]tatslist)$",
-    "^[!/.]([Ss]tats) (group) (%d+)",
-    "^[!/.]([Ss]tats) (mirror)",-- Put everything you like :)
-		"^[!/.]([Mm]irror)"-- Put everything you like :)
+    "^[!/#]([Ss]tats)$",
+    "^[!/#]([Ss]tatslist)$",
+    "^[!/#]([Ss]tats) (group) (%d+)",
+    "^[!/#]([Ss]tats) (telebumper)",-- Put everything you like :)
+		"^[!/#]([Bb]unper)"-- Put everything you like :)
     }, 
   run = run
 }

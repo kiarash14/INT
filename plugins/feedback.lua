@@ -10,7 +10,7 @@ do
    --like : local chat = "chat#id"..12345678
    
   local sends = send_msg(chat, fuse, ok_cb, false)
-  return 'Your feedback send to @pouya_x_boy!'
+  return 'Your feedback send to @Kiarash_gh14!'
  
  end
  end
